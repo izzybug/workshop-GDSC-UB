@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./img/Tenshukaku.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.jumbotron-image {
+  width: 200px;
+}
+
+.jumbotron-text {
+  color: white;
+  font-size: 3rem;
+}
+
+.jumbotron-description {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.island {
+  margin-top: 3rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1320px;
+}
+
+.island-title {
+  font-size: 2rem;
+}
+
+.island-item {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.island-item-text {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.island-item-image-img {
+  height: 300px;
+}
+
+.flex-flip {
+  flex-direction: row-reverse;
+}
+
+.review {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  width: 1320px;
+  gap: 1rem;
+}
+
+.review-title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.review-item {
+  background-color:whitesmoke;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.review-item-img {
+  border-radius: 100%;
+  border: 0.5px lightgrey solid;
+}
+
+.review-item-location {
+  font-weight:600;
+}
+
+.footer {
+  background-color:whitesmoke;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .island {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: auto;
+  }
+
+  .review {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1035px) {
+  .island-item {
+    flex-direction: column;
+  }
+
+  .flex-flip {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .review {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .island-item-image-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .jumbotron {
+    height: auto;
+  }
+}
